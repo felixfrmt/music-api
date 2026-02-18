@@ -1,0 +1,9 @@
+from .artists import artists_bp
+from .albums import albums_bp
+from .tracks import tracks_bp
+
+
+def register_blueprints(app):
+    app.register_blueprint(artists_bp)
+    app.register_blueprint(albums_bp)
+    app.register_blueprint(tracks_bp)
